@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulario Faculdade</title>
+</head>
+
+<body>
+    <fieldset class="form-group">
+        <h1>Form Name</h1>
+
+        <label class="labels" for="nome">Nome:<input type="text" id="nome" name="nome" placeholder="Digite seu nome"
+                required></label>
+
+        <label class="labels" for="data_nascimento">Data de Nascimento: <input type="date" id="data_nascimento"
+                name="data_nascimento" required></label>
+
+
+        <label class="labels" for="endereco">Endereço: <input type="text" id="endereco" name="endereco"
+                placeholder="Digite seu endereço" required></label>
+
+        <label class="labels" for="numero">Número: <input type="number" id="numero" name="numero"
+                placeholder="Digite o número da sua casa" required></label>
+
+        <label class="labels" for="cidade">Cidade: <input type="text" id="cidade" name="cidade"
+                placeholder="Digite sua cidade" required></label>
+
+        <label class="labels" for="estado">Estado:</label>
+
+        <select class="labels" id="estado" name="estado" required>
+            <option value="" disabled selected>Selecione seu estado</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="BA">Bahia</option>
+        </select>
+
+        <label class="labels" for="sexo">Sexo:</label>
+        <select class="labels" id="sexo" name="sexo" required>
+            <option value="" disabled selected>Selecione seu sexo</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <label class="bens labels">Bens Pessoais:
+
+
+            <label class="labels-check" for="casa">Casa<input type="checkbox" id="casa" name="bens"
+                    value="casa"></label>
+
+            <label class="labels-check" for="carro">Carro<input type="checkbox" id="moto" name="bens"
+                    value="moto"></label>
+
+            <label class="labels-check" for="moto">Moto<input type="checkbox" id="moto" name="bens"
+                    value="moto"></label>
+        </label>
+
+        <label class="labels" for="experiencias">Experiências Pessoais:</label>
+        <textarea class="area" id="experiencias" name="experiencias" rows="4"
+            placeholder="Descreva suas experiências pessoais..."></textarea>
+
+        <div style="text-align: center;">
+            <input type="submit" value="Enviar" class="btn-enviar">
+            <input type="reset" value="Limpar" class="btn-limpar">
+        </div>
+
+    </fieldset>
+
+
+
+</body>
+
+</html>
